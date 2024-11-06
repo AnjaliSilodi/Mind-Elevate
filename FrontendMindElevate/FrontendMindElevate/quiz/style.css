@@ -1,0 +1,274 @@
+/* General Styles */
+body {
+    font-family: 'Times New Roman', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/quiz2.jpg'); /* Path adjusted to parent directory */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* Overlay to make background image dull */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(45, 43, 43, 0.5); /* Black overlay with 50% opacity */
+    z-index: -1; /* Ensure overlay is behind the content */
+}
+
+/* Ensure content is above the overlay */
+.container, .quote-section, header {
+    position: relative;
+    z-index: 1;
+}
+
+
+header {
+    background-color: #c1cfc7;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+}
+
+.container {
+    max-width: 1330px; /* Changed from width: 60% */
+    margin: 30px auto; /* Adjusted margin for proper spacing */
+    background: linear-gradient(to bottom, rgba(255, 254, 254, 0.6), rgba(127, 187, 248, 0.5)); /* Gradient with transparency */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    font-size: 40px;
+    color: #000;
+    animation: fadeIn 1.5s ease-in-out; /* Animation for fade in */
+    opacity: 0; /* Initial opacity for animation */
+    animation-fill-mode: forwards; /* Ensures animation applies opacity at the end */
+    height: auto;
+}
+
+
+
+
+
+label {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 200;
+    color: #000; /* Black text */
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 60px;
+}
+
+.form-group label {
+    color: #000; /* Black labels */
+}
+
+.form-group input {
+    color: #000; /* Black text for input fields */
+}
+
+.btn-primary {
+    background-color: #0f9e7f;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.btn-custom {
+    font-size: 18px; /* Adjust text size */
+    padding: 12px 24px; /* Adjust padding */
+    text-align: center;
+    width: 200px; /* Fixed width */
+    margin: 0 auto; /* Center button horizontally */
+    display: block;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.question label {
+    font-weight: bold; /* Make questions bold */
+    display: block; /* Ensure questions take full width */
+    margin-bottom: 5px; /* Space between question and options */
+}
+
+.question input[type="radio"], .question input[type="checkbox"] {
+    margin-right: 10px; /* Space between option and text */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.chart-container {
+    width: 60%;
+    margin: 50px auto;
+}
+
+/* Quote Section */
+.quote-section {
+    text-align: center;
+    margin: 50px 0; /* Increased margin along the Y-axis */
+    font-size: 64px;
+    font-family: 'Times New Roman';
+    font-weight: 600;
+    color: #ffffff; /* White text for quote */
+    background-color: rgba(0, 0, 0, 0.0); /* More transparent background */
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: fadeInSlideDown 1.5s ease-in-out;
+}
+
+/* Animation for quote and form */
+@keyframes fadeInSlideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px); /* Starts with a slight upward movement */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Smoothly moves to its original position */
+    }
+}
+
+/* Navbar */
+.navbar {
+    padding: 10px 0; /* Reduce padding in the navbar */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    max-height: 50px; /* Keep logo height fixed */
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.form-row label {
+    margin-right: 15px;
+    flex-basis: 150px; /* Adjust as needed */
+}
+
+.form-row input {
+    flex: 1;
+}
+
+/* Custom Checkbox Styling */
+.checkbox-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    transform: scale(2); /* Scale the checkbox by 2 times */
+    -webkit-transform: scale(4); /* For Safari and Chrome */
+    -ms-transform: scale(2); /* For IE */
+    margin-right: 10px; /* Space between checkbox and label */
+}
+
+/* Style for GDS and PHQ-9 headings */
+.container h2 {
+    text-align: center; /* Center the text */
+    font-weight: bold; /* Make the text bold */
+    font-size: 3rem; /* Adjust font size if needed */
+    margin-top: 20px; /* Add some space above */
+    margin-bottom: 30px; /* Add some space below */
+    text-decoration: underline;
+    color:rgb(1, 38, 97);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    height: 6vh; /* Adjust the height if needed */
+    color: #000;
+  }
+  
+  #nextStepBtn:hover {
+    text-align: center;
+    font-size: 30px;
+    color:rgb(0, 0, 0);
+    background-color: #f9ff4a;
+    border-color: #eef0ff;
+  }
+
+  #nextStepBtn {
+    text-align: center;
+    font-size: 30px;
+    background-color: #50d6b0;
+    border-color: #f8f8f8;
+    color: rgb(255, 255, 255);
+  }
+
+/* Hide scrollbar in Webkit browsers */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+header h1, header p{
+    color:black
+}
+
+.custom-redirect-button {
+    background-color: #b8ee42; /* Example background color */
+    color: #000000; /* Example text color */
+    padding: 10px 20px; /* Example padding */
+    border-radius: 5px; /* Example border radius */
+    text-decoration: none; /* Remove underline from the link */
+    display: inline-block; /* Ensure it behaves like a block element */
+    font-weight: bold; /* Example text style */
+    font-size: 28px;
+}
+
+.custom-redirect-button:hover {
+    background-color: #0056b3; /* Example background color on hover */
+    color: #fff; /* Example text color */
+    padding: 10px 20px; /* Example padding */
+    border-radius: 5px; /* Example border radius */
+    text-decoration: none; /* Remove underline from the link */
+    display: inline-block; /* Ensure it behaves like a block element */
+    font-weight: bold; /* Example text style */
+    font-size: 28px;
+}

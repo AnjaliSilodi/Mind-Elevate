@@ -1,0 +1,40 @@
+/* Scoped styles for Start Your Journey Section */
+.start-journey-section .text-primary {
+    color: #00D1F9; /* Adjust to your theme's primary color */
+}
+
+.start-journey-section .btn-primary {
+    background-color: #00D1F9; /* Primary button color */
+    border-color: #00D1F9;
+}
+
+.start-journey-section .btn-primary:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+    border-color: #004085;
+}
+
+.start-journey-section .lead {
+    font-size: 1.25rem; /* Adjust font size for readability */
+}
+
+.start-journey-section .img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.start-journey-section .rounded-circle {
+    border-radius: 50%;
+}
+
+.start-journey-section .text-lg-start {
+    text-align: left;
+}
+
+/* features hero section */
+.carousel-caption h4, .carousel-caption h1, .carousel-caption p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  }
+
+  body::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Edge */
+  }

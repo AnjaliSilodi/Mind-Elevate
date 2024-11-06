@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>MindElevate</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous">
+    </script>
+    <script>  
+      $(function(){
+        $("#header").load("header.html"); 
+        $("#footer").load("footer.html"); 
+      });
+    </script> 
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/mystyles.css" rel="stylesheet" />
+  </head>
+<body>
+
+   <!-- Navbar & Hero Start -->
+   <div class="container-fluid position-relative p-0">
+    <nav
+      class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0"
+    >
+      <a href="logo.html" class="navbar-brand p-0">
+        <img src="img/logo2.jpeg" alt="Logo" style="border-radius: 12px;"/>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
+        <span class="fa fa-bars"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto py-0">
+          <a href="registeredHome.html" class="nav-item nav-link">Home</a>
+          <a href="working.html" class="nav-item nav-link active">Working</a>
+          <a href="features.html" class="nav-item nav-link"
+            >Features</a
+          >
+          <a href="about.html" class="nav-item nav-link">About</a>
+          <div class="nav-item dropdown">
+            <a
+              href="#"
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              >Pages</a
+            >
+            <div class="dropdown-menu m-0">
+              <a href="/quiz/index.html" class="dropdown-item">Self Assessment</a>
+                          <a href="resourceLibrary.html" class="dropdown-item">Resource Library</a>
+                          <a href="team.html" class="dropdown-item">Join Community</a>
+                          <a href="testimonial.html" class="dropdown-item">Book Counselling</a>
+                          <a href="404.html" class="dropdown-item">Crisis Intervention</a>
+                          <a href="404.html" class="dropdown-item">Exercise</a>
+            </div>
+          </div>
+          <a href="contact.html" class="nav-item nav-link">Contact</a>
+        </div>
+        <a
+          href="index.html"
+          class="btn btn-primary rounded-pill d-inline-flex flex-shrink-0 py-2 px-4"
+          >Logout</a
+        >
+      </div>
+    </nav>
+
+    <!-- Hero Section Start -->
+    <div class="carousel-header">
+      <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <img
+              src="img/working-banner.jpg"
+              class="d-block w-100"
+              alt="Mindfulness and Meditation" 
+              style="background-size: cover;
+          background-position: center center;
+          height: 700px;
+          width: 100%;"
+            />
+            <div
+              class="carousel-caption text-center"
+              style="
+                position: absolute;
+                top: 20%;
+                left: 50%;
+                transform: translateX(-50%);
+                padding: 20px;
+                width: 80%;
+                max-width: 1000px;
+                height: auto;
+              "
+            >
+              <h1 class="display-2 text-capitalize text-white mb-4">
+                  Achieve Inner Peace
+              </h1>
+              <p class="mb-5 fs-5 text-white">
+                A Step-by-Step Guide to Enhancing Your Mental Well-being
+MindElevate is a user-friendly platform that supports your mental health journey.
+              </p>
+              <a
+                class="btn btn-primary rounded-pill py-3 px-5 me-2"
+                href="#step1"
+                >See Working</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hero Section End -->
+  </div>
+  <!-- Navbar & Hero End -->
+
+
+
+
+    <!-- Mission and Purpose Enhanced Start -->
+    <div class="container-fluid mission pt-3" style="background-color: #f8f9fa;" id = "step1">
+      <div class="container pt-3">
+        <div
+          class="text-center mx-auto pb-5 wow fadeInUp"
+          data-wow-delay="0.2s"
+          style="max-width: 800px; padding: 0px;"
+        >
+          <h4 class="text-primary" style="font-size: 3rem; margin-top:20px; font-family: 'Times New Roman', Times, serif; font-weight: 600;">
+            Step-1
+          </h4>
+        </div>
+        <div class="row g-5 align-items-center">
+          <!-- Mission Text Section -->
+          <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.3s">
+            <!-- <h2 class="text-uppercase mb-3" style="color: #00d1f9">
+              Our Mission
+            </h2> -->
+            <h1 class="display-4 mb-4">Self Assessment</h1>
+            <p class="lead mb-4">
+              We strive to provide accessible tools, support, and resources to
+              help individuals nurture their mental health. Through education,
+              community, and expert guidance, our mission is to empower you to
+              lead a balanced and fulfilling life.
+            </p>
+            <!-- <a
+              href="#learn-more"
+              class="btn rounded-pill py-3 px-5"
+              style="background-color: #00d1f9; color: white"
+              >Explore Features</a
+            > -->
+          </div>
+
+          <!-- Mission Image Section -->
+          <div class="col-md-6 wow fadeInRight" data-wow-delay="0.3s">
+            <div class="about-img rounded h-100">
+              <img
+                src="img/working/assessment.jpeg"
+                class="img-fluid rounded h-100 w-100"
+                style="object-fit: cover"
+                alt="Our Mission"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="text-center mx-auto pb-5 wow fadeInUp"
+          data-wow-delay="0.3s"
+          style="max-width: 800px"
+        >
+          <img src="img/working/down-arrow.png" style="width: 120px; margin-top: 65px;"></img>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="container-fluid pt-1 mission" style="background-color: #f8f9fa">
+      <div class="container ">
+        <div
+          class="text-center mx-auto pb-5  wow fadeInUp"
+          data-wow-delay="0.2s"
+          style="max-width: 800px"
+        >
+          <h4 class="text-primary" style="font-size: 3rem; margin-top:0px; font-family: 'Times New Roman', Times, serif; font-weight: 600;">
+            Step-2
+          </h4>
+        </div>
+        
+        <div class="row g-5 align-items-center">
+            <div class="col-md-6 wow fadeInRight" data-wow-delay="0.3s">
+              <div class="about-img rounded h-100">
+                <img
+                  src="img/working/library.jpeg"
+                  class="img-fluid rounded h-100 w-100"
+                  style="object-fit: cover"
+                  alt="Our Mission"
+                />
+              </div>
+            </div>
+
+            <!-- Mission Text Section -->
+          <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.3s">
+            <!-- <h2 class="text-uppercase mb-3" style="color: #00d1f9">
+              Our Mission
+            </h2> -->
+            <h1 class="display-4 mb-4">Resource Library</h1>
+            <p class="lead mb-4">
+              We strive to provide accessible tools, support, and resources to
+              help individuals nurture their mental health. Through education,
+              community, and expert guidance, our mission is to empower you to
+              lead a balanced and fulfilling life.
+            </p>
+            <!-- <a
+              href="#learn-more"
+              class="btn rounded-pill py-3 px-5"
+              style="background-color: #00d1f9; color: white"
+              >Explore Features</a
+            > -->
+          </div>
+        </div>
+        <div
+          class="text-center mx-auto pb-5 wow fadeInUp"
+          data-wow-delay="0.3s"
+          style="max-width: 800px"
+        >
+          <img src="img/working/down-arrow.png" style="width: 120px; margin-top: 65px;"></img>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- Mission and Purpose Enhanced Start -->
+    <div class="container-fluid pt-1 mission " style="background-color: #f8f9fa">
+      <div class="container ">
+        <div
+          class="text-center mx-auto pb-5 wow fadeInUp"
+          data-wow-delay="0.2s"
+          style="max-width: 800px"
+        >
+          <h4 class="text-primary" style="font-size: 3rem; margin-top:20px; font-family: 'Times New Roman', Times, serif; font-weight: 600;">
+            Step-3
+          </h4>
+        </div>
+        
+        <div class="row g-5 align-items-center">
+          <!-- Mission Text Section -->
+          <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.3s">
+            <!-- <h2 class="text-uppercase mb-3" style="color: #00d1f9">
+              Our Mission
+            </h2> -->
+            <h1 class="display-4 mb-4">Join Community Group</h1>
+            <p class="lead mb-4">
+              We strive to provide accessible tools, support, and resources to
+              help individuals nurture their mental health. Through education,
+              community, and expert guidance, our mission is to empower you to
+              lead a balanced and fulfilling life.
+            </p>
+            <!-- <a
+              href="#learn-more"
+              class="btn rounded-pill py-3 px-5"
+              style="background-color: #00d1f9; color: white"
+              >Explore Features</a
+            > -->
+          </div>
+
+          <!-- Mission Image Section -->
+          <div class="col-md-6 wow fadeInRight" data-wow-delay="0.3s">
+            <div class="about-img rounded h-100">
+              <img
+                src="img/working/group.jpeg"
+                class="img-fluid rounded h-100 w-100"
+                style="object-fit: cover"
+                alt="Our Mission"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="text-center mx-auto pb-5 wow fadeInUp"
+          data-wow-delay="0.3s"
+          style="max-width: 800px"
+        >
+          <img src="img/working/down-arrow.png" style="width: 120px; margin-top: 65px;"></img>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="container-fluid pt-1 mission " style="background-color: #f8f9fa">
+      <div class="container ">
+        <div
+          class="text-center mx-auto pb-5 wow fadeInUp"
+          data-wow-delay="0.2s"
+          style="max-width: 800px"
+        >
+          <h4 class="text-primary" style="font-size: 3rem; margin-top:20px; font-family: 'Times New Roman', Times, serif; font-weight: 600;">
+            Step-4
+          </h4>
+        </div>
+        
+        <div class="row g-5 align-items-center">
+            <div class="col-md-6 wow fadeInRight" data-wow-delay="0.3s">
+              <div class="about-img rounded h-100">
+                <img
+                  src="img/working/counselling.jpeg"
+                  class="img-fluid rounded h-100 w-100"
+                  style="object-fit: cover"
+                  alt="Our Mission"
+                />
+              </div>
+            </div>
+
+            <!-- Mission Text Section -->
+          <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.3s">
+            <!-- <h2 class="text-uppercase mb-3" style="color: #00d1f9">
+              Our Mission
+            </h2> -->
+            <h1 class="display-4 mb-4">Professional Counselling</h1>
+            <p class="lead mb-4">
+              We strive to provide accessible tools, support, and resources to
+              help individuals nurture their mental health. Through education,
+              community, and expert guidance, our mission is to empower you to
+              lead a balanced and fulfilling life.
+            </p>
+            <!-- <a
+              href="#learn-more"
+              class="btn rounded-pill py-3 px-5"
+              style="background-color: #00d1f9; color: white"
+              >Explore Features</a
+            > -->
+          </div>
+        </div>
+        <div
+          class="text-center mx-auto pb-5 wow fadeInUp"
+          data-wow-delay="0.3s"
+          style="max-width: 800px"
+        >
+          <img src="img/working/down-arrow.png" style="width: 120px; margin-top: 65px;"></img>
+        </div>
+        
+      </div>
+    </div>
+
+    
+    <!-- Mission and Purpose Enhanced Start -->
+    <div class="container-fluid mission pt-1 " style="background-color: #f8f9fa">
+      <div class="container ">
+        <div
+          class="text-center mx-auto pb-5 wow fadeInUp"
+          data-wow-delay="0.2s"
+          style="max-width: 800px"
+        >
+          <h4 class="text-primary" style="font-size: 3rem; margin-top:20px; font-family: 'Times New Roman', Times, serif; font-weight: 600;">
+            Step-5
+          </h4>
+        </div>
+        
+        <div class="row g-5 align-items-center">
+          <!-- Mission Text Section -->
+          <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.3s">
+            <!-- <h2 class="text-uppercase mb-3" style="color: #00d1f9">
+              Our Mission
+            </h2> -->
+            <h1 class="display-4 mb-4">Crisis Intervention</h1>
+            <p class="lead mb-4">
+              We strive to provide accessible tools, support, and resources to
+              help individuals nurture their mental health. Through education,
+              community, and expert guidance, our mission is to empower you to
+              lead a balanced and fulfilling life.
+            </p>
+            <!-- <a
+              href="#learn-more"
+              class="btn rounded-pill py-3 px-5"
+              style="background-color: #00d1f9; color: white"
+              >Explore Features</a
+            > -->
+          </div>
+
+          <!-- Mission Image Section -->
+          <div class="col-md-6 wow fadeInRight" data-wow-delay="0.3s">
+            <div class="about-img rounded h-100">
+              <img
+                src="img/working/intervention.jpeg"
+                class="img-fluid rounded h-100 w-100"
+                style="object-fit: cover"
+                alt="Our Mission"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="text-center mx-auto pb-5 wow fadeInUp"
+          data-wow-delay="0.3s"
+          style="max-width: 800px"
+        >
+          <img src="img/working/down-arrow.png" style="width: 120px; margin-top: 65px;"></img>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="container-fluid mission pt-1 " style="background-color: #f8f9fa">
+      <div class="container ">
+        <div
+          class="text-center mx-auto pb-5 wow fadeInUp"
+          data-wow-delay="0.2s"
+          style="max-width: 800px"
+        >
+          <h4 class="text-primary" style="font-size: 3rem; margin-top:20px; font-family: 'Times New Roman', Times, serif; font-weight: 600;">
+            Step-6
+          </h4>
+        </div>
+        
+        <div class="row g-5 align-items-center">
+            <div class="col-md-6 wow fadeInRight" data-wow-delay="0.3s">
+              <div class="about-img rounded h-100">
+                <img
+                  src="img/working/mindful.jpeg"
+                  class="img-fluid rounded h-100 w-100"
+                  style="object-fit: cover"
+                  alt="Our Mission"
+                />
+              </div>
+            </div>
+
+            <!-- Mission Text Section -->
+          <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.3s">
+            <!-- <h2 class="text-uppercase mb-3" style="color: #00d1f9">
+              Our Mission
+            </h2> -->
+            <h1 class="display-4 mb-4">Mindful Exercises</h1>
+            <p class="lead mb-4">
+              We strive to provide accessible tools, support, and resources to
+              help individuals nurture their mental health. Through education,
+              community, and expert guidance, our mission is to empower you to
+              lead a balanced and fulfilling life.
+            </p>
+            <!-- <a
+              href="#learn-more"
+              class="btn rounded-pill py-3 px-5"
+              style="background-color: #00d1f9; color: white"
+              >Explore Features</a
+            > -->
+          </div>
+        </div>
+        <div
+          class="text-center mx-auto pb-5 wow fadeInUp"
+          data-wow-delay="0.3s"
+          style="max-width: 800px"
+        >
+          <img src="img/working/down-arrow.png" style="width: 120px; margin-top: 65px;"></img>
+        </div>
+        
+      </div>
+    </div>
+
+    <div
+          class="text-center mx-auto pb-5 wow fadeInUp"
+          data-wow-delay="0.2s"
+          style="padding: 10px; width: 100%; background-color: #f8f9fa; "
+        >
+          <h4 class="text-primary" style="font-size: 3rem; margin-top:20px; font-family: 'Times New Roman', Times, serif; font-weight: 600;">
+            Ready to Hustle
+          </h4>
+        </div>
+        
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+      <div class="container py-5">
+        <div class="row g-5 mb-5 align-items-center">
+          <div class="col-lg-7">
+            <div class="position-relative mx-auto">
+              <input
+                class="form-control rounded-pill w-100 py-3 ps-4 pe-5"
+                type="text"
+                placeholder="Enter your email address for updates"
+              />
+              <button
+                type="button"
+                class="btn btn-secondary rounded-pill position-absolute top-0 end-0 py-2 px-4 mt-2 me-2"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div
+              class="d-flex align-items-center justify-content-center justify-content-lg-end"
+            >
+              <a
+                class="btn btn-secondary btn-md-square rounded-circle me-3"
+                href="https://facebook.com"
+                target="_blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="btn btn-secondary btn-md-square rounded-circle me-3"
+                href="https://twitter.com"
+                target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                class="btn btn-secondary btn-md-square rounded-circle me-3"
+                href="https://instagram.com"
+                target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                class="btn btn-secondary btn-md-square rounded-circle me-0"
+                href="https://linkedin.com"
+                target="_blank"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="row g-5">
+          <div class="col-md-6 col-lg-6 col-xl-3">
+            <div class="footer-item d-flex flex-column">
+              <h3 class="text-white mb-4">MindElevate</h3>
+              <p class="mb-3">
+                Explore our wide range of mental health resources and support
+                systems designed to uplift and improve well-being.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-xl-3">
+            <div class="footer-item d-flex flex-column">
+              <h4 class="text-white mb-4">Quick Links</h4>
+              <a href="#"><i class="fas fa-angle-right me-2"></i> Home</a>
+              <a href="#"><i class="fas fa-angle-right me-2"></i> Working</a>
+              <a href="#"><i class="fas fa-angle-right me-2"></i> Features</a>
+              <a href="#"><i class="fas fa-angle-right me-2"></i> About</a>
+              <a href="#"><i class="fas fa-angle-right me-2"></i> Contact</a>
+            </div>
+          </div>
+          <!-- <div class="col-md-6 col-lg-6 col-xl-3">
+              <div class="footer-item d-flex flex-column">
+                  <h4 class="text-white mb-4">Business Hours</h4>
+                  <div class="mb-3">
+                      <h6 class="text-muted mb-0">Mon - Fri:</h6>
+                      <p class="text-white mb-0">09:00 AM to 07:00 PM</p>
+                  </div>
+                  <div class="mb-3">
+                      <h6 class="text-muted mb-0">Saturday:</h6>
+                      <p class="text-white mb-0">10:00 AM to 05:00 PM</p>
+                  </div>
+                  <div class="mb-3">
+                      <h6 class="text-muted mb-0">Sunday:</h6>
+                      <p class="text-white mb-0">Closed</p>
+                  </div>
+              </div>
+          </div> -->
+          <div class="col-md-6 col-lg-6 col-xl-3">
+            <div class="footer-item d-flex flex-column">
+              <h4 class="text-white mb-4">Contact Info</h4>
+              <a href="#"
+                ><i class="fa fa-map-marker-alt me-2"></i> Chandigarh, India</a
+              >
+              <a href="mailto:info@mindelevate.com"
+                ><i class="fas fa-envelope me-2"></i> mindelevate@gmail.com</a
+              >
+              <a href="tel:+0123456789"
+                ><i class="fas fa-phone me-2"></i> +91 8967383946</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-md-6 text-center text-md-start mb-md-0">
+            <span class="text-body"
+              ><a href="" class="border-bottom text-white"
+                ><i class="fas fa-copyright text-light me-2"></i>MindElevate</a
+              >, All right reserved.</span
+            >
+          </div>
+          <div class="col-md-6 text-center text-md-end text-body">
+            <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+            <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+            <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+            Designed By
+            <a class="border-bottom text-white" href="">Tech Rangers</a>
+            Distributed By
+            <a class="border-bottom text-white" href="">Tech Rangers</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright End -->
+
+    <!-- Back to Top -->
+    <a
+      href="#"
+      class="btn btn-secondary btn-lg-square rounded-circle back-to-top"
+      ><i class="fa fa-arrow-up"></i
+    ></a>
+
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>

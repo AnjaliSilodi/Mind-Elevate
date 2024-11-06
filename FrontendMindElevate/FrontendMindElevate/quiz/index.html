@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Assessment</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a href="index.html" class="navbar-brand">
+            <img src="../img/logo2.jpeg" alt="Logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse"></div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Quote Section Start -->
+    <div class="quote-section display-2 text-capitalize mb-4">
+        "Discover the Power of Self-Care"
+    </div>
+    <!-- Quote Section End -->
+
+    <!-- Mental Health Assessment Start -->
+    <header>
+        <h1>Mental Health Assessment</h1>
+        <p>Answer the following questions based on how you've felt in the past week.</p>
+    </header>
+
+    <div class="container">
+        <!-- PHQ-9 Questions Section -->
+        <div id="gdsSection">
+            <h2 class="text-center font-weight-bold">QUIZ-1</h2>
+            <div id="gdsQuestions">
+                <!-- Questions will be dynamically generated here -->
+            </div>
+            <button type="button" id="nextGDS" class="btn btn-primary btn-custom mt-3">Next</button>
+            <button type="button" id="submitGDS" class="btn btn-primary btn-custom mt-3"
+                style="display: none;">Submit</button>
+        </div>
+
+        <!-- Suggestion Section -->
+        <div id="suggestionContainer" class="text-center mt-4" style="display: none;">
+            <p id="suggestion" class="mb-5 fs-5 text-white"></p>
+        </div>
+
+        <!-- Next Step Button (Initially Hidden) -->
+        <div class="button-container">
+            <a id="nextStepBtn" href="../resourceLibrary.html" class="btn btn-secondary" style="display: none;">Next
+                Step - Let's Heal Together</a>
+        </div>
+
+        <!-- Suggestion Container Start -->
+        <div id="suggestionContainer" style="display: none;">
+            <p id="suggestion"></p>
+        </div>
+        <!-- Suggestion Container End -->
+
+    </div>
+    <!-- Mental Health Assessment End -->
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
